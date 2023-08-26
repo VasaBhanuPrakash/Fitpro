@@ -1,0 +1,30 @@
+extends layout 
+block content 
+    .row.page-header 
+        .col-lg-12 
+            h1=title
+    .row 
+        .col-xs-12.col-md-12 
+            a(href='signin')
+                button.btn.btn-default.pull-right Log In
+            button.btn.btn-default.pull-right Register 
+            form#register.form-horizontal(action='url',method='post',role='form')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name')  Name
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name') Email
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='password') Password
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(type='password')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='password') Confirm Password
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(type='password')
+            a(href='signin')
+                button.btn.btn-default.pull-right Submit
+        .col-xs-12.col-md-4
